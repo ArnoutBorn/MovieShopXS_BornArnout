@@ -7,7 +7,7 @@
 
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>1d30977a-01e3-4655-9e0e-d08178b8421f</ProjectGuid>
+    <ProjectGuid>a74213ad-f726-44fe-bf16-57c3ee6b551c</ProjectGuid>
     <RootNamespace>MovieShopXS_BornArnout</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
