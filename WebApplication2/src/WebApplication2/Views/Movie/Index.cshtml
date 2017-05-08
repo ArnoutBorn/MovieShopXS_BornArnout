@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model List<WebApplication2.ViewModels.MovieViewModel>
+
+
+@foreach( var mov in Model )
+{
+
+
+
+    <h1>
+        @Html.DisplayFor( modelItem => mov.title )
+    </h1>
+    <p>
+        (
+        @Html.DisplayFor( modelItem => mov.year )
+        )
+    </p>
+    <p>
+        @Html.DisplayFor( modelItem => mov.Description )
+    </p>
+    <h2>The Director</h2>
+    <p>@Html.DisplayFor( modelItem => mov.Director.FirstName) @Html.DisplayFor( modelItem => mov.Director.LastName )</p>
+    <h2>Actors</h2>
+    @foreach(var actor in mov.actors )
+    {
+        <p>@Html.DisplayFor(modelItem => actor.Actor.FirstName) @Html.DisplayFor( modelItem => actor.Actor.LastName )</p>
+    }
+    <h2>How much is this rated?</h2>
+    <p>@Html.DisplayFor( modelItem => mov.rating )</p>
+}
+
